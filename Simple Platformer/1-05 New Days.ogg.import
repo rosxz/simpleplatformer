@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/1-05 New Days.ogg-b0a2facd375e38b58d8806b4018a06fb.oggstr"
+
+[deps]
+
+source_file="res://1-05 New Days.ogg"
+dest_files=[ "res://.import/1-05 New Days.ogg-b0a2facd375e38b58d8806b4018a06fb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
