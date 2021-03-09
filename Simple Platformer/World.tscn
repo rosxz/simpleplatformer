@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objective.tscn" type="PackedScene" id=2]
-[ext_resource path="res://1-05 New Days.ogg" type="AudioStream" id=4]
+[ext_resource path="res://ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg" type="AudioStream" id=3]
 [ext_resource path="res://World.tres" type="TileSet" id=5]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://UI2.tscn" type="PackedScene" id=7]
@@ -25,8 +25,9 @@ tile_data = PoolIntArray( -262154, 0, 0, -262153, 0, 1, -262152, 0, 1, -262151, 
 world_scene = "res://World2.tscn"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 3 )
 volume_db = -10.0
+autoplay = true
 
 [node name="Enemy" parent="." instance=ExtResource( 6 )]
 position = Vector2( 197, 155 )

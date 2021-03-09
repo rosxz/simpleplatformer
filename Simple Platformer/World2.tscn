@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://World.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objective.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg" type="AudioStream" id=5]
 [ext_resource path="res://UI2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://sneaka.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=8]
@@ -50,4 +51,9 @@ position = Vector2( 104, 152 )
 
 [node name="Spikes3" parent="." instance=ExtResource( 8 )]
 position = Vector2( 264, 152 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+autoplay = true
 [connection signal="status" from="Player" to="CanvasLayer" method="_on_Player_status"]

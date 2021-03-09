@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://character-sheet-2.png" type="Texture" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://bg1.png" type="Texture" id=3]
+[ext_resource path="res://bg_bg.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -169,6 +170,11 @@ parameters/playback = SubResource( 12 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="bg_bg" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 189.75, 187 )
+scale = Vector2( 3.225, 3.07778 )
+texture = ExtResource( 4 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0.1, 0.1 )

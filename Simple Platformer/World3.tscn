@@ -9,7 +9,7 @@
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Moving Spike.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Moving Spike.gd" type="Script" id=9]
-[ext_resource path="res://objective.png" type="Texture" id=10]
+[ext_resource path="res://ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg" type="AudioStream" id=10]
 
 [node name="World3" type="Node2D"]
 
@@ -19,7 +19,8 @@
 position = Vector2( 152, -104 )
 
 [node name="Objective" parent="." instance=ExtResource( 6 )]
-position = Vector2( 200, -496 )
+position = Vector2( 192, -400 )
+world_scene = "res://World4.tscn"
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( -106, 75 )
@@ -106,8 +107,8 @@ scale = Vector2( 1, -1 )
 collision_layer = 32
 script = ExtResource( 9 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 200, -400 )
-scale = Vector2( 0.727273, 0.666667 )
-texture = ExtResource( 10 )
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -10.0
+autoplay = true
 [connection signal="status" from="Player" to="CanvasLayer" method="_on_Player_status"]

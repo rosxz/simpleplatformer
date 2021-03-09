@@ -14,4 +14,4 @@ func _physics_process(delta):
 	if abs(player.x - position.x) < 20 and abs(player.y - position.y) < 90:
 		motion.y = speed
 	
-	move_and_slide(motion, Vector2.UP)
+	motion = move_and_slide(motion, Vector2.UP)

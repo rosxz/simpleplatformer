@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg-80b984db61a498ecb104ceea40379486.oggstr"
+
+[deps]
+
+source_file="res://ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg"
+dest_files=[ "res://.import/ゆめにっきAztec Rave MonkeyREMIX (online-audio-converter.com).ogg-80b984db61a498ecb104ceea40379486.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
